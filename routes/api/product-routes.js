@@ -27,6 +27,7 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id,
     },
+    // specify which models to include
     include: [
       Category,
       {
